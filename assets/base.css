@@ -1,0 +1,42 @@
+﻿* {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	list-style: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all 0.2s linear;
+	transition: width none;
+}
+
+:root {
+	--main-color: #f46523;
+	--dark-color: #ce5f2b;
+	--black-color: #444;
+	--white-color: #fff;
+	--light-color: #666;
+	--border: 0.1rem solid rgba(0, 0, 0, 0.1);
+	--border-hover: 0.1rem solid var(--black-color);
+	--box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top: 5rem;
+	scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+	width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+	background-color: var(--black-color);
+}

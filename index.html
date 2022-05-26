@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/base.css" />
+		<link rel="stylesheet" href="./assets/main.css" />
+		<link rel="stylesheet" href="./assets/responsive.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<title>Pusta_shop</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<div class="headerWrapper">
+				<a href="/" class="headerLogo"><i class="fas fa-book"></i> Pusta</a>
+
+				<form action="" class="headerSearch-form">
+					<input type="text" class="search-input" placeholder="Search..." />
+					<label for="search-input" class="fas fa-search"></label>
+				</form>
+
+				<div class="headerIcons">
+					<div id="headerSearchBtn" class="fas fa-search"></div>
+					<div id="headerCartBtn" class="fas fa-shopping-cart"></div>
+					<div id="headerLoginBtn" class="fas fa-user"></div>
+				</div>
+			</div>
+			<div class="headerNavbar">
+				<nav class="headerNavbarList">
+					<a href="#home" class="">HOME</a>
+					<a href="#book" class="">BOOKS</a>
+					<a href="#contact" class="">CONTACT</a>
+					<a href="#reviews" class="">REVIEWS</a>
+					<a href="#about" class="">ABOUT</a>
+				</nav>
+			</div>
+		</header>
+
+		<!-- bottom navbar  -->
+
+		<nav class="bottomNavbar">
+			<a href="/" class="fas fa-home"></a>
+			<a href="#book" class="fas fa-book-open"></a>
+			<a href="#contact" class="fas fa-phone"></a>
+			<a href="#reviews" class="fas fa-comment"></a>
+			<a href="#about" class="fas fa-circle-info"></a>
+		</nav>
+
+		<!-- cart -->
+
+		<div class="cart">
+			<div class="cartContainer">
+				<h1 class="heading"><span>CART</span></h1>
+				<div class="cartBox">
+					
+				</div>
+				<div class="cartTotal">
+					<h3 >Total</h3>
+					<div class="cartTotalPrice">$0</div>
+				</div>
+				<button class="cartButton">Buy now</button>
+				<div class="cartClose" id="cartClose">X</div>
+			</div>
+		</div>
+
+		<div class="cartIconFixed">
+			<div id="headerCartBtn" class="fas fa-shopping-cart"></div>
+		</div>
+		<!-- login form  -->
+
+		<div class="loginContainer">
+			<div id="loginBtnClose" class="fas fa-times"></div>
+
+			<form action="">
+				<h3>sign in</h3>
+				<span>username</span>
+				<input
+					type="email"
+					name=""
+					class="loginBox"
+					placeholder="enter your email"
+				/>
+				<span>password</span>
+				<input
+					type="password"
+					name=""
+					class="loginBox"
+					placeholder="enter your password"
+				/>
+				<div class="loginCheckBox">
+					<input type="checkbox" name="" id="remember-me" />
+					<label for="remember-me"> remember me</label>
+				</div>
+				<input type="submit" value="sign in" class="loginBtnInput" />
+				<p>forget password ? <a href="#">click here</a></p>
+				<p>don't have an account ? <a href="#">create one</a></p>
+			</form>
+		</div>
+
+		<!-- slider -->
+		<div class="slider" id="home">
+			<div class="slide active">
+				<img src="./assets/image/background1.jpg" alt="" />
+				<div class="info">
+					<p>
+						“I just finished This Time Tomorrow and I'm crying at its message
+						and its honesty and its utter beauty. And now I have to go call my
+						mom.”
+					</p>
+					<h2>"Jodi Picoult, author of Wish You Were Here"</h2>
+				</div>
+			</div>
+			<div class="slide">
+				<img src="./assets/image/background2.jpg" alt="" />
+				<div class="info">
+					<p>“Blair is a rebel, an artist, and it turns out: a writer”</p>
+					<h2>"Glennon Doyle, author of Untamed"</h2>
+				</div>
+			</div>
+			<div class="slide">
+				<img src="./assets/image/background3.jpg" alt="" />
+				<div class="info textRight">
+					<p>
+						"Explore New & Upcoming Manga
+						<br />
+						Just in Time for Summer"
+					</p>
+				</div>
+			</div>
+
+			<div class="navigation">
+				<div class="btn active"></div>
+				<div class="btn"></div>
+				<div class="btn"></div>
+			</div>
+		</div>
+
+		<!-- Features  -->
+		<div class="featureContainer">
+			<div class="feature">
+				<i class="fas fa-shipping-fast"></i>
+				<div class="featureContent">
+					<h3>free shipping</h3>
+					<p>order over $100</p>
+				</div>
+			</div>
+
+			<div class="feature">
+				<i class="fas fa-lock"></i>
+				<div class="featureContent">
+					<h3>secure payment</h3>
+					<p>100 secure payment</p>
+				</div>
+			</div>
+
+			<div class="feature">
+				<i class="fas fa-redo-alt"></i>
+				<div class="featureContent">
+					<h3>easy returns</h3>
+					<p>10 days returns</p>
+				</div>
+			</div>
+
+			<div class="feature">
+				<i class="fas fa-headset"></i>
+				<div class="featureContent">
+					<h3>24/7 support</h3>
+					<p>call us anytime</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- book -->
+		<div class="books" id="book">
+			<h1 class="heading"><span>BOOKS</span></h1>
+			<img src="/assets/image/sale.jpg" alt="">
+			<div class="bookWrapper">
+				<div class="bookSlider">
+					<div class="bookBox">
+						<div class="bookIcons">
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star-half"></a>
+						</div>
+						<div class="bookImage">
+							<img src="./assets/image/book-1.png" alt="" class="bookImgItem"/>
+						</div>
+						<div class="bookContent">
+							<h3 class="bookTitle">featured books</h3>
+							<div class="bookPrice">$15.99</div>
+							<a  class="bookBtn" id="addCart">add to cart</a>
+						</div>
+					</div>
+					<div class="bookBox">
+						<div class="bookIcons">
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star-half"></a>
+						</div>
+						<div class="bookImage">
+							<img src="./assets/image/book-2.png" alt="" class="bookImgItem" />
+						</div>
+						<div class="bookContent">
+							<h3 class="bookTitle">featured books</h3>
+							<div class="bookPrice">$15.99</div>
+							<a class="bookBtn" id="addCart">add to cart</a>
+						</div>
+					</div>
+					<div class="bookBox">
+						<div class="bookIcons">
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star-half"></a>
+						</div>
+						<div class="bookImage">
+							<img src="./assets/image/book-3.png" alt="" class="bookImgItem" />
+						</div>
+						<div class="bookContent">
+							<h3 class="bookTitle">featured books</h3>
+							<div class="bookPrice">$15.99</div>
+							<a class="bookBtn" id="addCart">add to cart</a>
+						</div>
+					</div>
+					<div class="bookBox">
+						<div class="bookIcons">
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star-half"></a>
+						</div>
+						<div class="bookImage">
+							<img src="./assets/image/book-4.png" alt="" class="bookImgItem" />
+						</div>
+						<div class="bookContent">
+							<h3 class="bookTitle">featured books</h3>
+							<div class="bookPrice">$15.99</div>
+							<a class="bookBtn" id="addCart">add to cart</a>
+						</div>
+					</div>
+					<div class="bookBox">
+						<div class="bookIcons">
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star-half"></a>
+						</div>
+						<div class="bookImage">
+							<img src="./assets/image/book-5.png" alt="" class="bookImgItem" />
+						</div>
+						<div class="bookContent">
+							<h3 class="bookTitle">featured books</h3>
+							<div class="bookPrice">$15.99</div>
+							<a class="bookBtn" id="addCart">add to cart</a>
+						</div>
+					</div>
+					<div class="bookBox">
+						<div class="bookIcons">
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star-half"></a>
+						</div>
+						<div class="bookImage">
+							<img src="./assets/image/book-6.png" alt="" class="bookImgItem" />
+						</div>
+						<div class="bookContent">
+							<h3 class="bookTitle">featured books</h3>
+							<div class="bookPrice">$15.99</div>
+							<a class="bookBtn" id="addCart">add to cart</a>
+						</div>
+					</div>
+					<div class="bookBox">
+						<div class="bookIcons">
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star-half"></a>
+						</div>
+						<div class="bookImage">
+							<img src="./assets/image/book-7.png" alt="" class="bookImgItem" />
+						</div>
+						<div class="bookContent">
+							<h3 class="bookTitle">featured books</h3>
+							<div class="bookPrice">$15.99</div>
+							<a class="bookBtn" id="addCart">add to cart</a>
+						</div>
+					</div>
+					<div class="bookBox">
+						<div class="bookIcons">
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star-half"></a>
+						</div>
+						<div class="bookImage">
+							<img src="./assets/image/book-8.png" alt="" class="bookImgItem" />
+						</div>
+						<div class="bookContent">
+							<h3 class="bookTitle">featured books</h3>
+							<div class="bookPrice">$15.99</div>
+							<a class="bookBtn" id="addCart">add to cart</a>
+						</div>
+					</div>
+					<div class="bookBox">
+						<div class="bookIcons">
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star-half"></a>
+						</div>	
+						<div class="bookImage">
+							<img src="./assets/image/book-9.png" alt="" class="bookImgItem" />
+						</div>
+						<div class="bookContent">
+							<h3 class="bookTitle">featured books</h3>
+							<div class="bookPrice">$15.99</div>
+							<a class="bookBtn" id="addCart">add to cart</a>
+						</div>
+					</div>
+					<div class="bookBox">
+						<div class="bookIcons">
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star"></a>
+							<a href="#" class="fas fa-star-half"></a>
+						</div>
+						<div class="bookImage">
+							<img src="./assets/image/book-10.png" alt="" class="bookImgItem" />
+						</div>
+						<div class="bookContent">
+							<h3 class="bookTitle">featured books</h3>
+							<div class="bookPrice">$15.99</div>
+							<a class="bookBtn" id="addCart">add to cart</a>
+						</div>
+					</div>
+				</div>
+				<button class="bookButton next">&#8250</button>
+				<button class="bookButton prev">&#8249</button>
+			</div>
+		</div>
+
+		<!-- contact  -->
+
+		<div class="contact" id="contact">
+			<h1 class="heading"><span>CONTACT</span></h1>
+			<div class="contactWrapper">
+				<form action="">
+					<h3>Say something!</h3>
+					<input
+						type="email"
+						name=""
+						placeholder="enter your name"
+						class="contactBox"
+					/>
+					<input
+						type="email"
+						name=""
+						placeholder="enter your email"
+						class="contactBox"
+					/>
+					<input
+						type="email"
+						name=""
+						placeholder="enter your number"
+						class="contactBox"
+					/>
+					<textarea placeholder="write something..." class="contactBox"></textarea>
+					<input type="submit" value="send message" class="contactBtn" />
+				</form>
+			</div>
+		</div>
+
+		<!-- Review -->
+		<div class="reviews" id="reviews">
+			<h1 class="heading"><span>REVIEWS</span></h1>
+			
+				<div class="reviewWrapper">
+					<div class="reviewBox">
+						<img src="/assets/image/pic-1.png" alt="" />
+						<h3>john deo</h3>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+							Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+							facere hic.
+						</p>
+						<div class="reviewStars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+						</div>
+					</div>
+
+					<div class="reviewBox">
+						<img src="/assets/image/pic-2.png" alt="" />
+						<h3>john deo</h3>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+							Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+							facere hic.
+						</p>
+						<div class="reviewStars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+						</div>
+					</div>
+
+					<div class="reviewBox">
+						<img src="/assets/image/pic-3.png" alt="" />
+						<h3>john deo</h3>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+							Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+							facere hic.
+						</p>
+						<div class="reviewStars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+						</div>
+					</div>
+					<div class="reviewBox">
+						<img src="/assets/image/pic-4.png" alt="" />
+						<h3>john deo</h3>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+							Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+							facere hic.
+						</p>
+						<div class="reviewStars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+						</div>
+					</div>
+					<div class="reviewBox">
+						<img src="/assets/image/pic-5.png" alt="" />
+						<h3>john deo</h3>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+							Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+							facere hic.
+						</p>
+						<div class="reviewStars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+						</div>
+					</div>
+					<div class="reviewBox">
+						<img src="/assets/image/pic-6.png" alt="" />
+						<h3>john deo</h3>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+							Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+							facere hic.
+						</p>
+						<div class="reviewStars">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star-half-alt"></i>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<!-- About -->
+		<div class="about" id="about">
+			<h1 class="heading"><span>ABOUT</span></h1>
+			<div class="aboutWrapper">
+				<p>	The Pusta Shop is a community space for everyone enthused by the Books. Since 2020, the Pusta Shop has been in Ho Chi Minh, and with the support of the thousands of patrons that have passed through the shop’s doors, will continue to be for the next 100 years to come.
+				</p>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="footer">
+			<div class="footerContainer">
+					<div class="footerBox">
+						<h3>our locations</h3>
+						<a href="#"> <i class="fas fa-map-marker-alt"></i> Ho Chi Minh </a>
+						<a href="#"> <i class="fas fa-map-marker-alt"></i> Ha Noi </a>
+						<a href="#"> <i class="fas fa-map-marker-alt"></i> Ninh Thuan </a>
+					</div>
+					<div class="footerBox">
+						<h3>contact info</h3>
+						<a href="#"> <i class="fas fa-phone"></i> 0914427758 </a>
+						<a href="#"> <i class="fas fa-envelope"></i> pusta@gmail.com </a>
+					</div>
+					<div class="footerBox">
+						<h3>Sign up for our Newsletter</h3>
+						<input
+							type="email"
+							name=""
+							placeholder="enter your email"
+							class="footerBoxInput"
+						/>
+						<input type="submit" value="Subscribe" class="footerBoxBtn" />
+					</div>
+				</div>
+				<div class="footerShare">
+					<a href="#" class="fab fa-facebook-f"></a>
+					<a href="#" class="fab fa-twitter"></a>
+					<a href="#" class="fab fa-instagram"></a>
+					<a href="#" class="fab fa-linkedin"></a>
+					<a href="#" class="fab fa-pinterest"></a>
+				</div>
+				
+		</div>
+
+		
+		<script src="main.js"></script>
+	</body>
+</html>
