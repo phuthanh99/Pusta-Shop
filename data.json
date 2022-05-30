@@ -1,0 +1,62 @@
+﻿[
+	{
+		"id": "product-1",
+		"name": "Featured Books",
+		"price": "15.99",
+		"img": "./assets/image/book-1.png"
+	},
+	{
+		"id": "product-2",
+		"name": "Featured Books",
+		"price": "15.99",
+		"img": "./assets/image/book-2.png"
+	},
+	{
+		"id": "product-3",
+		"name": "Featured Books",
+		"price": "15.99",
+		"img": "./assets/image/book-3.png"
+	},
+	{
+		"id": "product-4",
+		"name": "Featured Books",
+		"price": "15.99",
+		"img": "./assets/image/book-4.png"
+	},
+	{
+		"id": "product-5",
+		"name": "Featured Books",
+		"price": "15.99",
+		"img": "./assets/image/book-5.png"
+	},
+	{
+		"id": "product-6",
+		"name": "Featured Books",
+		"price": "15.99",
+		"img": "./assets/image/book-6.png"
+	},
+	{
+		"id": "product-7",
+		"name": "Featured Books",
+		"price": "15.99",
+		"img": "./assets/image/book-7.png"
+	},
+	{
+		"id": "product-8",
+		"name": "Featured Books",
+		"price": "15.99",
+		"img": "./assets/image/book-8.png"
+	},
+	{
+		"id": "product-9",
+		"name": "Featured Books",
+		"price": "15.99",
+		"img": "./assets/image/book-9.png"
+	},
+	{
+		"id": "product-10",
+		"name": "Featured Books",
+		"price": "15.99",
+		"img": "./assets/image/book-10.png"
+	}
+]
